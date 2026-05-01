@@ -1,4 +1,4 @@
-# Jayraj Nagose — Neo-Brutalist Portfolio
+# Jay Raju Nagose — Neo-Brutalist Portfolio
 
 A production-ready, high-converting freelance portfolio engineered with a Neo-Brutalist design system, Modular Typography, and Bento Grid architecture.
 
