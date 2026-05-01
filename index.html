@@ -189,16 +189,20 @@
 
         <!-- Secondary Case Studies -->
         <article class="bento-card case-study col-6 reveal-on-scroll">
-          <div class="case-study__visual-bento" style="display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 120px 120px; gap: 0.5rem; margin-bottom: 1.5rem;">
-            <div style="grid-row: span 2; border: 2px solid var(--clr-border); box-shadow: 3px 3px 0 var(--clr-border); overflow: hidden; background: var(--clr-surface);">
-              <img src="assets/images/RDC constr/Data-Colection_visit_to_branch.jpg" alt="Data Collection Visit" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(15%); transition: filter 0.3s ease;" onmouseover="this.style.filter='grayscale(0)'" onmouseout="this.style.filter='grayscale(15%)'">
+          <div class="case-study__visual-marquee" style="margin-bottom: 1.5rem; overflow: hidden; border: 2px solid var(--clr-border); box-shadow: 4px 4px 0 var(--clr-border); background: var(--clr-card-a); display: flex; white-space: nowrap;">
+            <div style="display: flex; animation: marquee 15s linear infinite; min-width: 200%;">
+              <img src="assets/images/RDC constr/Data-Colection_visit_to_branch.jpg" alt="Data Collection Visit" style="height: 200px; width: 50%; object-fit: cover; border-right: 2px solid var(--clr-border);">
+              <img src="assets/images/RDC constr/20250423_43730PMByGPSMapCamera.jpg" alt="Field Test Prototype" style="height: 200px; width: 50%; object-fit: cover; border-right: 2px solid var(--clr-border);">
+              <!-- duplicate for seamless loop -->
+              <img src="assets/images/RDC constr/Data-Colection_visit_to_branch.jpg" alt="Data Collection Visit" style="height: 200px; width: 50%; object-fit: cover; border-right: 2px solid var(--clr-border);">
+              <img src="assets/images/RDC constr/20250423_43730PMByGPSMapCamera.jpg" alt="Field Test Prototype" style="height: 200px; width: 50%; object-fit: cover;">
             </div>
-            <div style="border: 2px solid var(--clr-border); box-shadow: 3px 3px 0 var(--clr-border); overflow: hidden; background: var(--clr-surface);">
-              <img src="assets/images/RDC constr/20250423_43730PMByGPSMapCamera.jpg" alt="Field Test Prototype 1" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(15%); transition: filter 0.3s ease;" onmouseover="this.style.filter='grayscale(0)'" onmouseout="this.style.filter='grayscale(15%)'">
-            </div>
-            <div style="border: 2px solid var(--clr-border); box-shadow: 3px 3px 0 var(--clr-border); overflow: hidden; background: var(--clr-surface);">
-              <img src="assets/images/RDC constr/20250423_43745PMByGPSMapCamera.jpg" alt="Field Test Prototype 2" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(15%); transition: filter 0.3s ease;" onmouseover="this.style.filter='grayscale(0)'" onmouseout="this.style.filter='grayscale(15%)'">
-            </div>
+            <style>
+              @keyframes marquee {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+            </style>
           </div>
           <div class="case-study__meta text-mono text-sm text-dim">
             <span>RDC Concrete (India) Ltd</span>
