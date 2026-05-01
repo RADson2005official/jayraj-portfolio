@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayraj Nagose | AI Engineer & Full-Stack Developer</title>
+  <meta name="description" content="AI Engineer & Full-Stack Developer Building Intelligent Systems. Specializing in agentic workflows and computer vision.">
+  
+  <!-- Fonts: Bebas Neue (Display), IBM Plex Mono (Secondary), Literata (Body), Hanken Grotesk (Accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Hero Section -->
+  <header class="section-hero" id="home">
+    <nav class="nav">
+      <div class="nav__brand text-display">JAYRAJ.</div>
+      <div class="nav__links">
+        <a href="#services" class="text-label">Services</a>
+        <a href="#work" class="text-label">Work</a>
+        <a href="#process" class="text-label">Process</a>
+      </div>
+      <div class="nav__actions" style="display:flex; gap: 1rem; align-items:center;">
+        <button id="theme-toggle" class="btn-text text-mono text-sm" aria-label="Toggle theme">[ Theme: Auto ]</button>
+        <a href="#contact" class="btn btn--primary text-label">Contact &rarr;</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero__overline">
+        <span class="status-dot">●</span> <span class="text-mono">Open to projects & opportunities — Remote-first</span>
+      </div>
+      
+      <div class="hero__main">
+        <div class="hero__text">
+          <h1 class="text-hero">JAYRAJ<br>NAGOSE</h1>
+          <p class="hero__tagline text-display">AI Engineer & Full-Stack Developer Building <em class="accent-text">Intelligent</em> Systems.</p>
+          <p class="hero__bio text-serif">Many businesses struggle with chaotic systems and inefficient, complex workflows. I build production-ready AI solutions and full-stack web applications to turn that confusion into clear, automated direction. My systems have reduced development time by 50% and manual measurement time by 70%.</p>
+          
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--large text-label">Book a Call &rarr;</a>
+            <a href="#work" class="btn btn--outline text-label">View Work &darr;</a>
+          </div>
+        </div>
+        
+        <div class="hero__visual bento-card bento-card--photo tilt-right">
+          <img src="assets/images/headshot.jpg" alt="Jayraj Nagose - Professional Portrait" loading="eager" class="hero__img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Social Proof - Client Logos -->
+    <section class="section-logos">
+      <div class="text-mono text-xs section-label">[ COLLABORATORS & TECHNOLOGIES ]</div>
+      <div class="logo-track">
+        <!-- Using tech stack as proxy for logos since direct clients aren't specified -->
+        <span class="text-display">LANGCHAIN</span>
+        <span class="text-display">PYTORCH</span>
+        <span class="text-display">REACT</span>
+        <span class="text-display">FASTAPI</span>
+        <span class="text-display">LLAMA</span>
+        <span class="text-display">POSTGRESQL</span>
+      </div>
+    </section>
+
+    <!-- Services Bento Grid -->
+    <section class="section-bento" id="services">
+      <div class="bento-grid">
+        
+        <!-- Featured Service (Full Width) -->
+        <article class="bento-card bento-card--featured col-12 reveal-on-scroll">
+          <div class="card__watermark text-mono">01</div>
+          <div class="card__content">
+            <h2 class="text-xl">Applied AI & LLM Integration</h2>
+            <p class="text-md text-serif">Building domain-adapted LLMs, RAG pipelines, and LangChain multi-agent workflows.</p>
+          </div>
+          <div class="card__footer">
+            <div class="tags">
+              <span class="text-mono text-sm">[ Python ]</span>
+              <span class="text-mono text-sm">[ LLaMA ]</span>
+              <span class="text-mono text-sm">[ LangChain ]</span>
+            </div>
+            <a href="#contact" class="text-mono text-sm link-hover">Discuss Project &rarr;</a>
+          </div>
+        </article>
+
+        <article class="bento-card bento-card--a col-6 reveal-on-scroll">
+          <div class="card__watermark text-mono">02</div>
+          <div class="card__content">
+            <h2 class="text-xl">Full-Stack Web Development</h2>
+            <p class="text-md text-serif">Architecting robust applications with React, FastAPI, and PostgreSQL.</p>
+          </div>
+          <div class="card__footer">
+            <div class="tags">
+              <span class="text-mono text-sm">[ React ]</span>
+              <span class="text-mono text-sm">[ FastAPI ]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card bento-card--b col-6 reveal-on-scroll">
+          <div class="card__watermark text-mono">03</div>
+          <div class="card__content">
+            <h2 class="text-xl">Computer Vision Solutions</h2>
+            <p class="text-md text-serif">Automated pipelines for detection, 3D reconstruction, and area estimation.</p>
+          </div>
+          <div class="card__footer">
+            <div class="tags">
+              <span class="text-mono text-sm">[ OpenCV ]</span>
+              <span class="text-mono text-sm">[ SAM-2 ]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Empty breathing card for rhythm -->
+        <article class="bento-card bento-card--breathing col-4 reveal-on-scroll">
+          <span class="text-display accent-text text-4xl">*</span>
+        </article>
+
+        <article class="bento-card bento-card--a col-8 reveal-on-scroll">
+          <div class="card__watermark text-mono">04</div>
+          <div class="card__content">
+            <h2 class="text-xl">Advanced Network Security</h2>
+            <p class="text-md text-serif">Designing RL-enhanced Intrusion Detection Systems for adaptive security.</p>
+          </div>
+          <div class="card__footer">
+            <div class="tags">
+              <span class="text-mono text-sm">[ PyTorch ]</span>
+              <span class="text-mono text-sm">[ DQN/PPO ]</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section-work" id="work">
+      <h2 class="text-2xl section-title reveal-text">SELECTED WORK</h2>
+      
+      <div class="bento-grid">
+        <!-- Featured Case Study -->
+        <article class="bento-card case-study case-study--featured col-12 reveal-on-scroll">
+          <div class="case-study__visual bg-accent-wash">
+            <div class="placeholder-img text-mono">Triovative Architecture Diagram</div>
+          </div>
+          <div class="case-study__body">
+            <div class="case-study__meta text-mono text-sm text-dim">
+              <span>Triovative Software Solution Pvt Ltd</span>
+            </div>
+            <h3 class="text-2xl">AI-Accelerated Development Pipeline</h3>
+            <div class="case-study__desc text-serif">
+              <p><strong>BEFORE:</strong> High development time and complex enterprise workflows needing automation.</p>
+              <p><strong>AFTER:</strong> Designed multi-agent systems using LangChain/LangGraph, integrated LangSmith for testing, and architected full-stack apps.</p>
+            </div>
+            
+            <div class="metrics-row">
+              <div class="metric-pod">
+                <span class="text-2xl text-mono accent-text">-50%</span>
+                <span class="text-serif text-sm">Dev Time (3mo&rarr;1.5mo)</span>
+              </div>
+              <div class="metric-pod">
+                <span class="text-2xl text-mono accent-text">100%</span>
+                <span class="text-serif text-sm">Workflow Automation</span>
+              </div>
+            </div>
+            
+            <div class="card__footer">
+              <div class="tags">
+                <span class="text-mono text-sm">[ Agentic AI ]</span>
+                <span class="text-mono text-sm">[ LangChain ]</span>
+              </div>
+              <a href="https://github.com/RADson2005official" target="_blank" class="text-mono text-sm link-hover">View on GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Secondary Case Studies -->
+        <article class="bento-card case-study col-6 reveal-on-scroll">
+          <div class="case-study__meta text-mono text-sm text-dim">
+            <span>RDC Concrete (India) Ltd</span>
+          </div>
+          <h3 class="text-xl">CV Material Volume Measurement</h3>
+          <div class="case-study__desc text-serif">
+            <p><strong>BEFORE:</strong> Manual material volume measurement is time-consuming and error-prone.</p>
+            <p><strong>AFTER:</strong> Fine-tuned SAM-2 & Gemini Vision LLMs; engineered 3D reconstruction pipelines via OpenCV.</p>
+          </div>
+          <div class="metrics-row compact">
+            <div class="metric-pod">
+              <span class="text-xl text-mono accent-text">< 10%</span>
+              <span class="text-serif text-sm">Error margin</span>
+            </div>
+            <div class="metric-pod">
+              <span class="text-xl text-mono accent-text">-70%</span>
+              <span class="text-serif text-sm">Manual Time</span>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="tags"><span class="text-mono text-sm">[ OpenCV ]</span></div>
+          </div>
+        </article>
+
+        <article class="bento-card case-study col-6 reveal-on-scroll">
+          <div class="case-study__meta text-mono text-sm text-dim">
+            <span>Independent Research</span>
+          </div>
+          <h3 class="text-xl">Tax-LLaMA-Ind: Domain-Adapted LLM</h3>
+          <div class="case-study__desc text-serif">
+            <p><strong>BEFORE:</strong> Complex Indian Income Tax laws requiring automated legal advisory.</p>
+            <p><strong>AFTER:</strong> Fine-tuned LLaMA 3.2-8B via QLoRA; built hybrid RAG pipeline with FAISS + pgVector.</p>
+          </div>
+          <div class="metrics-row compact">
+            <div class="metric-pod">
+              <span class="text-xl text-mono accent-text">High</span>
+              <span class="text-serif text-sm">Citation Accuracy</span>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="tags"><span class="text-mono text-sm">[ LLM Fine-tuning ]</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials / Social Proof (Inverted for rhythm) -->
+    <section class="section-testimonials reveal-on-scroll">
+      <div class="bento-grid masonry">
+        <article class="bento-card bento-card--inverted col-6">
+          <div class="text-acid text-4xl testimonial-quote-mark">"</div>
+          <p class="text-md text-serif font-italic">"His approach replaces unnecessary chaos with clear, actionable direction. A true architect of logical strategy."</p>
+          <div class="testimonial-author">
+            <img src="assets/images/mi-to-myself.png" alt="Jay Profile" class="author-avatar tilt-left">
+            <div>
+              <div class="text-label text-bold">WHY Institute Assessment</div>
+              <div class="text-mono text-xs text-dim">Make Sense Profile</div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bento-card col-6">
+          <div class="text-acid text-4xl testimonial-quote-mark">"</div>
+          <p class="text-md text-serif font-italic">"Exceptionally curious and imaginative. Uses high conscientiousness to execute innovative solutions systematically."</p>
+          <div class="testimonial-author">
+            <div>
+              <div class="text-label text-bold">Big Five Personality Insights</div>
+              <div class="text-mono text-xs text-dim">Psychological Profile</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-process" id="process">
+      <h2 class="text-2xl section-title reveal-text">MY PROCESS</h2>
+      <div class="process-track">
+        
+        <article class="process-step">
+          <div class="text-mono text-3xl process-num accent-text">[ 01 ]</div>
+          <h3 class="text-xl">Diagnose Complexity</h3>
+          <p class="text-serif">Take in complex information, analyze patterns, and identify the root cause of the problem rather than treating the surface.</p>
+          <div class="connector-arrow">&rarr;</div>
+        </article>
+
+        <article class="process-step">
+          <div class="text-mono text-3xl process-num accent-text">[ 02 ]</div>
+          <h3 class="text-xl">Architect Logical Strategy</h3>
+          <p class="text-serif">Design a clear, structured architecture built on logical reasoning and data, replacing unnecessary chaos with actionable direction.</p>
+          <div class="connector-arrow">&rarr;</div>
+        </article>
+
+        <article class="process-step">
+          <div class="text-mono text-3xl process-num accent-text">[ 03 ]</div>
+          <h3 class="text-xl">Develop Smart Solutions</h3>
+          <p class="text-serif">Utilize advanced technologies (Agentic AI, Computer Vision, robust APIs) to build the functional MVP or system pipeline.</p>
+          <div class="connector-arrow">&rarr;</div>
+        </article>
+
+        <article class="process-step">
+          <div class="text-mono text-3xl process-num accent-text">[ 04 ]</div>
+          <h3 class="text-xl">Rigorous Testing</h3>
+          <p class="text-serif">Implement thorough testing and monitoring to measure real-world performance and ensure high accuracy.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="section-contact" id="contact">
+      <div class="contact-container reveal-on-scroll">
+        <h2 class="text-hero">READY TO BUILD<br><span class="accent-text">SOMETHING GREAT?</span></h2>
+        <div class="text-mono text-sm overline-status">Maharashtra, India • Open to Projects</div>
+        
+        <div class="contact-actions">
+          <a href="mailto:nagosejayraj2005@gmail.com" class="btn btn--giant">Email Me &rarr;</a>
+          <span class="text-mono text-label email-raw">nagosejayraj2005@gmail.com</span>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/jay-nagose-1a1a06257/" target="_blank" class="text-mono text-sm">[ LinkedIn ]</a>
+          <a href="https://github.com/RADson2005official" target="_blank" class="text-mono text-sm">[ GitHub ]</a>
+          <a href="https://huggingface.co/JayNagose" target="_blank" class="text-mono text-sm">[ HuggingFace ]</a>
+          <a href="https://medium.com/@nagosejayraj2005" target="_blank" class="text-mono text-sm">[ Medium ]</a>
+          <a href="https://dev.to/radson2005official" target="_blank" class="text-mono text-sm">[ Dev.to ]</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer text-mono text-xs">
+    <span>[ JAYRAJ NAGOSE ]</span>
+    <span>&copy; 2026</span>
+    <button id="backToTop" class="btn-text">Back to top &uarr;</button>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
